@@ -25,7 +25,7 @@ abstract class Modele
     {
         if ($this->bdd == null) {
             // Création de la connexion
-            $this->bdd = new \PDO('mysql:host=eu-cdbr-west-01.cleardb.com;dbname=p5;charset=utf8', 'b16703084cd4c6', 'd9df742d',
+            $this->bdd = new \PDO('mysql:host=eu-cdbr-west-01.cleardb.com;dbname=users;charset=utf8', 'b16703084cd4c6', 'd9df742d',
                 array(\PDO::ATTR_ERRMODE => \PDO::ERRMODE_EXCEPTION));
         }
         return $this->bdd;
