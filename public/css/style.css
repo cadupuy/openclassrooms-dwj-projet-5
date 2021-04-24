@@ -1,0 +1,620 @@
+/* STYLES GÉNÉRAUX DU SITE */
+
+body {
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    margin-top: 90px;
+}
+
+i {
+    background-color: #5f8024;
+    padding: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+table {
+    margin: auto;
+    color: white;
+    font-family: 'Londrina Solid', cursive;
+    font-size: 50px;
+    text-align: center;
+
+}
+
+th {
+    border: 3px solid white;
+    padding: 30px;
+}
+
+
+
+td {
+    border: 3px solid white;
+    padding: 30px;
+}
+
+/* STYLE GENERAL DU SLIDER */
+
+.slider {
+    position: relative;
+    max-width: 1900px;
+    margin: auto;
+    margin-bottom: 20px;
+}
+
+.slide {
+    position: relative;
+    width: 100%;
+    transition: 1s all ease;
+    opacity: 0;
+    height: 0;
+    overflow: hidden;
+}
+
+.slide.active {
+    opacity: 1;
+    height: auto;
+}
+
+
+.slide img {
+    width: 100%;
+    height: auto;
+}
+
+.mobile-image {
+    display: none;
+}
+
+/* MENU RESPONSIVE*/
+
+.nav-toggle {
+    cursor: pointer;
+    height: 2rem;
+    left: 5.5rem;
+    position: fixed;
+    top: 2.5rem;
+    width: 3.6rem;
+    z-index: 2;
+}
+
+.nav-toggle .nav-toggle-bar,
+.nav-toggle .nav-toggle-bar::after,
+.nav-toggle .nav-toggle-bar::before {
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    background: #ffffff;
+    content: "";
+    height: 0.4rem;
+    transition: all 0.5s;
+    width: 100%;
+}
+
+.nav-toggle .nav-toggle-bar {
+    margin-top: 0;
+}
+
+.nav-toggle .nav-toggle-bar::after {
+    margin-top: 0.8rem;
+}
+
+.nav-toggle .nav-toggle-bar::before {
+    margin-top: -0.8rem;
+}
+
+.nav-toggle.expanded .nav-toggle-bar {
+    background: transparent;
+}
+
+.nav-toggle.expanded .nav-toggle-bar::after,
+.nav-toggle.expanded .nav-toggle-bar::before {
+    background: #ffffff;
+    margin-top: 0;
+}
+
+.nav-toggle.expanded .nav-toggle-bar::after {
+    -ms-transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+.nav-toggle.expanded .nav-toggle-bar::before {
+    -ms-transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+}
+
+.nav {
+    background: #a0bc08;
+    color: #ffffff;
+    cursor: pointer;
+    display: flex;
+    font-size: 2rem;
+    height: 100vh;
+    left: -40rem;
+    padding: 6rem 2rem 2rem 2rem;
+    position: fixed;
+    top: 0;
+    transition: all 0.5s;
+    width: 15rem;
+    z-index: 1;
+}
+
+.nav.expanded {
+    left: 0;
+}
+
+.nav ul {
+    list-style: none;
+    margin: auto 0;
+    padding: 0;
+}
+
+/* DESIGN DE LA PAGE ERREUR */
+
+.erreur {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    width: 70%;
+}
+
+.texterreur {
+    position: relative;
+    bottom: 130px;
+    font-size: 30px;
+    font-family: 'Londrina Solid', cursive;
+    color: white;
+}
+
+.oups {
+    font-size: 180px;
+    color: white;
+    position: relative;
+    font-family: 'Bangers', cursive;
+    margin-bottom: 100px;
+
+}
+
+.backhome {
+    position: relative;
+    padding: 20px;
+    bottom: 100px;
+    font-size: 30px;
+    font-weight: bold;
+    color: white;
+    background-color: #5f8024;
+    font-family: 'Londrina Solid', cursive;
+}
+
+
+/* STYLES DE LA PAGE D'ACCUEIL */
+
+.titre-jeu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 130px;
+    color: white;
+    font-family: 'Bangers', cursive;
+    margin-bottom: 130px;
+    text-shadow: 0 0 20px #000;
+}
+
+.fondSnake {
+    background: radial-gradient(#a0bc08, #799a01);
+}
+
+.title-page {
+    position: relative;
+    bottom: 30px;
+}
+
+.navAccueil {
+    position: relative;
+    bottom: 130px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    width: 100%;
+    font-family: 'Londrina Solid', cursive;
+
+}
+
+.ulAccueil {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: unset;
+    margin: auto;
+    padding-left: 0px;
+}
+
+/* DESIGN DE LA PAGE SCORE ET REGLEMENT */
+
+
+
+.instructions {
+    max-width: 650px;
+    margin: auto;
+    padding-left: 50px;
+    padding-right: 50px;
+    margin-bottom: 70px;
+
+}
+
+.reglement-regles {
+    font-family: 'Bangers', cursive;
+    color: white;
+    margin: auto;
+    width: 100%;
+    text-align: center;
+    font-size: 65px;
+    margin-bottom: 30px;
+
+
+}
+
+.reglement {
+    font-family: 'Bangers', cursive;
+    color: white;
+    margin: auto;
+    width: 100%;
+    text-align: center;
+    font-size: 65px;
+    margin-bottom: 30px;
+
+
+}
+
+
+.description-reglement {
+    font-family: 'Londrina Solid', cursive;
+    color: white;
+    font-size: 30px;
+    text-align: justify;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+    justify-content: center;
+}
+
+/* STYLES DU MENU HUMBURGER */
+
+
+
+.liAccueilSmall {
+    font-family: 'Londrina Solid', cursive;
+    list-style: none;
+    color: #edeecf;
+    font-size: 30px;
+    background-color: #5f8024;
+    padding: 15px 40px;
+    text-align: center;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 10px;
+    border-radius: 3px;
+
+}
+
+.liAccueil {
+    list-style: none;
+    color: #edeecf;
+    font-size: 55px;
+    background-color: #5f8024;
+    padding: 15px 40px;
+    text-align: center;
+    margin-bottom: 20px;
+    display: flex;
+    border-radius: 3px;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/* STYLES DE LA PAGE CONNEXION  */
+
+
+.formConnexion {
+    position: relative;
+    margin: auto;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.retour {
+    font-family: 'Londrina Solid', cursive;
+    position: relative;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    padding-top: 30px;
+    text-align: center;
+    font-size: 15px;
+    line-height: 1.2;
+    color: white;
+    width: 100%;
+    top: 60px;
+}
+
+
+.inputCo {
+    font-family: 'Londrina Solid', cursive;
+    font-size: 20px;
+    color: #5f8024;
+    line-height: 1.2;
+    display: block;
+    width: 100%;
+    height: 55px;
+    border: none;
+    /* background: transparent; */
+    padding: 0 10px;
+    outline: none;
+    position: relative;
+
+}
+
+.bouton2 {
+    padding: 13px 65px 13px 65px;
+    border: none;
+    letter-spacing: 0.7px;
+    cursor: pointer;
+    font-size: 40px;
+    color: #fff;
+    text-transform: uppercase;
+    background-color: #5f8024;
+    font-family: 'Londrina Solid', cursive;
+    width: 109%;
+    border-radius: 3px;
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.fondco {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.pasDeCompte {
+    text-decoration: underline;
+}
+
+.titleConnexion {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 80px;
+    position: relative;
+    font-family: 'Bangers', cursive;
+    color: white;
+    margin-bottom: 40px;
+}
+
+/* STYLES DU CANVAS */
+
+.controles {
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    color: white;
+    margin-bottom: 45px;
+    display: none;
+
+}
+
+.fa-arrow-left {
+    margin-right: 20px;
+}
+
+.fa-arrow-right {
+    margin-left: 20px;
+}
+
+#canvas {
+    position: relative;
+    display: block;
+    margin: 50px auto;
+    background-color: #edeecf;
+    width: 900px;
+    height: 600px;
+}
+
+#canvas2 {
+    display: none;
+    width: 600px;
+    height: 300px;
+}
+
+.title {
+    font-size: 20px;
+}
+
+/* DÉFINITION DU STYLE DU FOOTER */
+
+.piedDePage {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    bottom: 140px;
+    font-family: 'Londrina Solid', cursive;
+    margin-top: 40px;
+
+}
+
+.piedDePage p {
+    text-align: center;
+    font-size: 10px;
+    color: #edeecf;
+}
+
+
+/* STYLES DE LA PARTIE GAME CENTER */
+
+.entete-jeu {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: relative;
+    max-width: 1530px;
+    margin: auto;
+    height: 0px;
+}
+
+
+.score {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Londrina Solid', cursive;
+    color: white;
+    font-size: 40px;
+
+}
+
+.start {
+    padding: 10px 20px;
+    font-size: 40px;
+    color: white;
+    font-family: 'Londrina Solid', cursive;
+    background-color: #5f8024;
+    border: none;
+    cursor: pointer;
+    border-radius: 3px;
+}
+
+
+#computerScore {
+    padding-left: 10px;
+
+}
+
+
+/*  STYLES DU RESPONSIVE */
+
+@media all and (max-width: 1000px) {
+
+    .snakeGame {
+        margin-top: 140px;
+    }
+
+    #canvas {
+        width: 700px;
+        height: 450px;
+    }
+
+
+}
+
+@media all and (max-width: 760px) {
+    .liAccueil {
+        font-size: 45px;
+    }
+
+    .titre-jeu {
+        font-size: 100px;
+        line-height: 1.1;
+        margin-bottom: 130px;
+    }
+
+    table {
+        font-size: 40px;
+
+    }
+
+    #canvas {
+        width: 550px;
+        height: 350px;
+    }
+}
+
+/* DÉFINITION DES STYLES POUR LE SMARTPHONE */
+
+@media all and (max-width: 500px) {
+    .reglement {
+        width: 90%;
+    }
+
+    .reglement-regles {
+        width: 100%;
+        font-size: 45px;
+    }
+
+    .titleConnexion {
+        font-size: 60px;
+    }
+
+    .pseudoList {
+        font-size: 35px;
+
+
+    }
+
+    .scoreList {
+        font-size: 35px;
+
+    }
+
+    #canvas {
+        width: 360px;
+        height: 250px;
+    }
+
+    .controles {
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-size: 30px;
+        color: white;
+        display: flex;
+
+    }
+
+}
+
+@media all and (max-width: 360px) {
+
+    #canvas {
+        width: 310px;
+        height: 200px;
+    }
+
+
+}
