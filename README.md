@@ -2,6 +2,9 @@
 
 Code source du Projet 5 de la formation Développeur Web d'OpenClassrooms, projet libre.
 
+[![](http://image.noelshack.com/fichiers/2021/18/2/1620117517-snake.jpg)]()
+
+
 ## Le projet
 
 Snake Game est une application web qui reprend les codes du célèbre jeu sorti à la fin des années 1990 avec l'émergence de la téléphonie mobile.
